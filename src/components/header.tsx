@@ -8,8 +8,8 @@ const Header = () => {
             <div className="header__form">
                 <Link to="/home">👁 Shiniasse</Link>
                 <Link to="/resume">Resume</Link>
-                <Link to="/blog">Projects</Link>
-                <Link to="/projects">Blog</Link>
+                <Link to="/blog">Blog</Link>
+                <Link to="/projects">Projects</Link>
                 <Link to="/books">Books</Link>
             </div>
         </nav>
