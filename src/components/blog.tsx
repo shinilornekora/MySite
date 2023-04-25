@@ -31,6 +31,12 @@ const Blog = () => {
         setVal("name", "")
         setVal("description", "")
     }
+
+    function postDeleted(): void {
+        if (!(String(prompt("Введите да, чтобы подтвердить удавление: ")).toLowerCase() === "да"))
+            return;
+        alert("Ещё не реализовано.")
+    }
     return (
         <div className="blog">
             <div className="wrapper">
@@ -53,7 +59,8 @@ const Blog = () => {
                                         <blockquote>{e[1]}</blockquote>
                                     </div>
                                 </div>
-                                <img src="static/delete__post.png" alt="delete"/>
+                                <img src="static/delete__post.png" onClick={postDeleted}
+                                     className="delete" alt="delete"/>
                             </div>
                         )
                     })}

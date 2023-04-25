@@ -13,7 +13,7 @@ function reducer(state = defaultState, action: any) {
         case "ADD__POSTS":
             return {...state, posts: [...state.posts, action.payload]}
         case "REMOVE__POSTS":
-            return {...state, posts: state.posts.filter((e) => e != action.payload)}
+            return {...state, posts: state.posts.filter((e) => e !== action.payload)}
         default:
             return state
     }
