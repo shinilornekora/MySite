@@ -1,0 +1,12 @@
+embed {
+    min-width: 600px;
+    min-height: 850px;
+    margin-top: 3em;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
