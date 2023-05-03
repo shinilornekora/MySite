@@ -1,12 +1,14 @@
+.parallax__example {
+    width: 100%;
+    height: 100%;
+}
+
 .books {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.books {
-    background: linear-gradient(to right, #ffffff, #9fffff);
+    background: linear-gradient(to right, #ffffff, #8F509D);
     background-size: 400% 400%;
     animation: gradient 9s ease-in infinite;
 }
@@ -23,14 +25,48 @@
     }
 }
 .books__wrapper {
+    position: fixed;
     text-align: center;
     gap: 5px;
 }
 
 .name {
     font-size: 44px;
+    overflow-wrap: anywhere;
 }
 
 .description p {
     font-size: 1rem;
+}
+
+.books__placement {
+    display: flex;
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.book__deco {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.parallax {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 600%;
 }

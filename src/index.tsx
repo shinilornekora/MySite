@@ -6,6 +6,12 @@ import {Provider} from "react-redux";
 
 
 const defaultState = {
+    books: [
+        {serial: 1, name: "Путь надежды", link: "path-of-hope"},
+        {serial: 2, name: "Величие алхимии", link: "path-of-hope"},
+        {serial: 3, name: "Агония страха", link: "path-of-hope"},
+        {serial: 4, name: "Глас мстителя", link: "path-of-hope"},
+    ],
     posts: [],
     projects: [
         {

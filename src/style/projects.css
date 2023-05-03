@@ -36,7 +36,7 @@
 
 }
 
-button:hover {
+.project__buttons button:hover {
     cursor: pointer;
     background: lightskyblue;
     padding: 10px 10px;
