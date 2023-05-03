@@ -62,9 +62,6 @@ const Books = () => {
                     </div>
                 </div>
             </div>
-            <div className="parallax">
-
-            </div>
         </div>
     );
 };
