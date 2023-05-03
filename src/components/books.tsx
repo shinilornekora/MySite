@@ -1,42 +1,37 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../style/books.css'
 import {useSelector} from "react-redux";
 const Books = () => {
     const result = useSelector((state: any) => state.books)
-    const [previousScrollPosition, setPreviousScrollPosition]: [null|number, any] = useState(null);
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     }
-    function cords() {
-        let topScroll = document.documentElement.scrollTop
-        if (previousScrollPosition === null) {
-            setPreviousScrollPosition ( topScroll )
-            return;
+    const checker = function() {
+        let element = document.querySelector ( ".name" ) as HTMLElement;
+        let block = document.querySelector(".books__wrapper") as HTMLElement;
+        if (!element || !block) {
+            setTimeout ( checker, 100 )
+            return
         }
-        let result = (previousScrollPosition > topScroll) ? - 1 : 1; // true - вверх, false - вниз
-        let name = document.querySelector ( ".name" ) as HTMLElement;
-        let description = document.querySelector ( ".description" ) as HTMLElement;
-        let books = document.querySelector ( ".books__wrapper" ) as HTMLElement;
-        if (!name.style.fontSize && !description.style.fontSize) {
-            name.style.fontSize = "44px";
-            description.style.fontSize = "1rem"
-        }
-        let helper = Number ( name.style.fontSize.slice ( 0, - 2 ) ) + topScroll/100*result;
-        name.style.fontSize = String (  helper+ "px");
-        name.style.opacity = String(1 - ( helper/100));
-        books.style.opacity = String(1 - ( helper/100));
-        if (Number(name.style.opacity) <= 0)
-            books.style.display = "none";
-        else {
-            books.style.display = "flex";
-            books.style.flexDirection = "column";
-        }
-        setPreviousScrollPosition ( topScroll )
-        console.log((previousScrollPosition > topScroll) ? "up" : "down")
+        const startSize = 44; // начальный размер элемента
+        const endSize = 120; // конечный размер элемента
+        const scrollStart = 0; // начальная позиция скролла
+        const scrollEnd = 100; // конечная позиция скролла
+        const scrollHeight = scrollEnd - scrollStart; // высота прокрутки
+        const sizeDiff = endSize - startSize; // разница в размере
+        document.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollPercent = Math.min(scrollPosition / scrollHeight, 1); // процент прокрутки
+            const newSize = startSize + sizeDiff * scrollPercent; // новый размер элемента
+            if (element.style.fontSize == null)
+                element.style.fontSize = "44px";
+            element.style.fontSize = newSize + 'px'; // установка нового размера
+            block.style.opacity = String(1 - (newSize - 44)/70)
+            element.style.transition = 'height 0.3s ease-out'; // добавление CSS-анимации
+        });
     }
 
-    document.onscroll = cords;
-
+    checker()
     return (
         <div className="parallax__example">
             <div className="books">
