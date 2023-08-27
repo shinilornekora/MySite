@@ -1,71 +1,71 @@
 .content__wrapper {
-    margin-top: 5em;
-    text-align: center;
+  margin-top: 5em;
+  text-align: center;
 }
 
 .line {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 p {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .motion-design {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-    font-size: 32px;
-    background: azure;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  font-size: 32px;
+  background: azure;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .motion-design__statement {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .wondershare__filmora {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-    font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: azure;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: azure;
 }
 
 .wondershare__filmora__statement {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .game__daralis {
-    margin: 5em auto;
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-    font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: azure;
+  margin: 5em auto;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: azure;
 }
 
 .game__daralis__statement {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 video {
-    max-width: 480px;
-    max-height: 360px;
+  max-width: 480px;
+  max-height: 360px;
 }

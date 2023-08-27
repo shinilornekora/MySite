@@ -1,29 +1,29 @@
 .header {
-    width: 100%;
-    background: azure;
-    height: 3rem;
-    position: fixed;
+  width: 100%;
+  background: azure;
+  height: 3rem;
+  position: fixed;
+  z-index: 100;
 }
 
 .header__form {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
 .header__form a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    height: 3em;
-    color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3em;
+  color: black;
 }
 
 .header__form a:hover {
-    background: lightskyblue;
-    color: azure;
+  background: lightskyblue;
+  color: azure;
 }

@@ -1,72 +1,72 @@
 .blog {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    padding-top: 4em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 4em;
 }
 
 .post {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 10em
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
 }
 
 button {
-    max-width: 80px;
-    align-self: flex-end;
-    padding: 5px 5px;
-    text-align: center;
-    background: white;
-    border: 1px solid black;
+  max-width: 80px;
+  align-self: flex-end;
+  padding: 5px 5px;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
 }
 
 input {
-    padding: 5px 5px;
-    border-color: aliceblue;
+  padding: 5px 5px;
+  border-color: aliceblue;
 }
 
 textarea {
-    max-width: 300px;
-    max-height: 300px;
-    border-color: aliceblue;
-    padding: 5px 5px;
+  max-width: 300px;
+  max-height: 300px;
+  border-color: aliceblue;
+  padding: 5px 5px;
 }
 
 .posts__creation {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    gap: 5px;
-    margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  gap: 5px;
+  margin-left: 1em;
 }
 
 .posts__place {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .posts__form {
-    min-width: 10em;
+  min-width: 10em;
 }
 
 .delete {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .delete:hover {
-    color: red;
+  color: red;
 }
 
 .post__form {
-    overflow-wrap: break-word;
-    width: 25em;
+  overflow-wrap: break-word;
+  width: 25em;
 }
